@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "nombre": "Ana",
+    "apellidos": "García López",
+    "promocion": "2024/2025",
+    "ciclo": "DAW",
+    "urlImagen": "https://randomuser.me/api/portraits/women/1.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Carlos",
+    "apellidos": "Martínez Ruiz",
+    "promocion": "2024/2025",
+    "ciclo": "SMX",
+    "urlImagen": "https://randomuser.me/api/portraits/men/1.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Laura",
+    "apellidos": "Fernández Silva",
+    "promocion": "2023/2024",
+    "ciclo": "DAW",
+    "urlImagen": "https://randomuser.me/api/portraits/women/2.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Miguel",
+    "apellidos": "Sánchez Torres",
+    "promocion": "2023/2024",
+    "ciclo": "ARI",
+    "urlImagen": "https://randomuser.me/api/portraits/men/2.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Elena",
+    "apellidos": "Rodríguez Vega",
+    "promocion": "2024/2025",
+    "ciclo": "IEA",
+    "urlImagen": "https://randomuser.me/api/portraits/women/3.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "David",
+    "apellidos": "López Moreno",
+    "promocion": "2023/2024",
+    "ciclo": "SMX",
+    "urlImagen": "https://randomuser.me/api/portraits/men/3.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "María",
+    "apellidos": "González Ruiz",
+    "promocion": "2024/2025",
+    "ciclo": "DAW",
+    "urlImagen": "https://randomuser.me/api/portraits/women/4.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Jorge",
+    "apellidos": "Pérez Castro",
+    "promocion": "2022/2023",
+    "ciclo": "ARI",
+    "urlImagen": "https://randomuser.me/api/portraits/men/4.jpg"
+  }
+]

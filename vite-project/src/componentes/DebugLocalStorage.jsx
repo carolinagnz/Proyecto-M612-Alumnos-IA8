@@ -15,11 +15,22 @@ function DebugLocalStorage() {
     if (window.confirm('¿Eliminar TODOS los datos de localStorage?')) {
       localStorage.clear();
       alert('LocalStorage limpiado. Recarga la página.');
+      window.location.reload();
     }
   };
   
   return (
-    <div className="fixed bottom-4 right-4 bg-gray-800 text-white p-4 rounded-lg shadow-lg z-50">
+    <div style={{
+      position: 'fixed',
+      bottom: '20px',
+      right: '20px',
+      backgroundColor: '#1f2937',
+      color: 'white',
+      padding: '16px',
+      borderRadius: '8px',
+      boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
+      zIndex: 9999
+    }}>
       <h3 className="font-bold mb-2">Debug LocalStorage</h3>
       <button
         onClick={verDatos}

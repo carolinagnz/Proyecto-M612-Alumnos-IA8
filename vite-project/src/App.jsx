@@ -19,6 +19,7 @@ import FiltroNombre from './componentes/FiltroNombre';
 import Alumno from './componentes/Alumno';
 import Avatar from './componentes/Avatar';
 import FormularioAlumno from './componentes/FormularioAlumno';
+import DebugLocalStorage from './componentes/DebugLocalStorage';
 
 function App() {
   
@@ -341,6 +342,9 @@ function App() {
           onCancel={cerrarFormulario}
         />
       )}
+      
+      {/* Debug - solo para desarrollo */}
+      <DebugLocalStorage />
     </>
   );
 }

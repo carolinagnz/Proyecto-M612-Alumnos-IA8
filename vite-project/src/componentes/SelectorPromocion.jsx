@@ -1,36 +1,43 @@
 /**
- * COMPONENTE ALUMNO
- * ==================
- * Muestra la información de un alumno en formato de tarjeta.
+ * COMPONENTE SELECTOR PROMOCION
+ * ==============================
+ * Selector para filtrar alumnos por promoción.
  * 
  * Props:
- * - nombre: Nombre del alumno
- * - apellidos: Apellidos del alumno
- * - promo: Promoción del alumno
- * - children: Contenido hijo (Avatar)
+ * - promociones: Array con las promociones disponibles
+ * - promocionSeleccionada: Promoción actualmente seleccionada
+ * - onPromocionChange: Función que se ejecuta al cambiar la promoción
  */
 
-function Alumno({ nombre, apellidos, promo, children }) {
+function SelectorPromocion({ promociones, promocionSeleccionada, onPromocionChange }) {
+  
+  const handleChange = (evento) => {
+    onPromocionChange(evento.target.value);
+  };
+
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 flex items-center gap-4 hover:shadow-xl transition-shadow">
+    <div className="mb-6">
+      <label className="block text-sm font-medium text-gray-700 mb-2">
+        Filtrar por promoción:
+      </label>
       
-      {/* Avatar (children) */}
-      <div className="flex-shrink-0">
-        {children}
-      </div>
-      
-      {/* Información del alumno */}
-      <div className="flex-grow">
-        <h3 className="text-xl font-bold text-gray-800">
-          {nombre} {apellidos}
-        </h3>
-        <p className="text-sm text-gray-600 mt-1">
-          Promoción: {promo}
-        </p>
-      </div>
-      
+      <select
+        value={promocionSeleccionada}
+        onChange={handleChange}
+        className="w-full md:w-96 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white"
+      >
+        {/* Opción por defecto para mostrar todas */}
+        <option value="">Todas las promociones</option>
+        
+        {/* Mapear las promociones disponibles */}
+        {promociones.map(promo => (
+          <option key={promo} value={promo}>
+            {promo}
+          </option>
+        ))}
+      </select>
     </div>
   );
 }
 
-export default Alumno;
+export default SelectorPromocion;
